@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+ import React from "react";
+ import 'bootstrap/dist/css/bootstrap.min.css';
+import PathFinder from "./Containers/PathFinder/PathFinder";
+
 
 function App() {
   return (
-    <div className="App">
-       Path finder coming soon...
+    <div>
+       <PathFinder/>
     </div>
   );
 }
