@@ -1,24 +1,35 @@
 import React from 'react';
 import Aux from '../../hoc/Auxi/Auxi'
-import {Navbar,Nav,Form,Button,NavDropdown} from 'react-bootstrap';
+  
 
 const header = () => {
     return(
         <Aux>
-            <Navbar bg="dark" variant="dark"  >
-                <Navbar.Brand href="#home">PathFinder</Navbar.Brand>
-                    <Nav  className="mr-auto">
-                    <NavDropdown title="Select Algorithm" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Breadth-First Search (BFS)</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Depth-First Search (DFS)</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Dijkstra</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">...</NavDropdown.Item>
-                    </NavDropdown>
-                    </Nav>
-                <Form inline>
-                    <Button variant="success">Start</Button>
-                </Form>
-            </Navbar>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a className="navbar-brand" href="#">PathFinder</a>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+                </button>
+
+                <div className="collapse navbar-collapse" id="navbarColor01">
+                <ul className="navbar-nav mr-auto">
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Algo
+                        </a>
+                        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a className="dropdown-item" href="#">Breadth-First Search (BFS)</a>
+                        <a className="dropdown-item" href="#">Depth-First Search (DFS)</a>
+                        <a className="dropdown-item" href="#">Dijkstra</a>
+                        <a className="dropdown-item" href="#">...</a>
+                        </div>
+                    </li>
+                </ul>
+                <form className="form-inline">
+                    <button className="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                </div>
+            </nav>
         </Aux>
     )
 }

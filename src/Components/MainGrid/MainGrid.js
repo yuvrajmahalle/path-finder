@@ -7,7 +7,7 @@ const mainGrid = () =>{
     const mainGirdCol = new Array(33).fill(0);
     return (
         <div>
-             <table >
+             <table>
                 {
                     mainGirdRow.map((item, indexRow) => {
                         return (
@@ -15,7 +15,7 @@ const mainGrid = () =>{
                             {
                                  mainGirdCol.map((itemCol,indexCol) => {
                                      return(
-                                         <td  className={classes.GridCell} key={indexRow+"_"+indexCol} id={"col_"+indexRow+"_"+indexCol}>d</td>
+                                         <td  className={classes.GridCell} key={indexRow+"_"+indexCol} id={"col_"+indexRow+"_"+indexCol}></td>
                                      )
                                  })
                             }
