@@ -4,12 +4,15 @@ import Header from '../../Components/Navigation/Header';
 import MainGrid from '../../Components/MainGrid/MainGrid';
 
 class PathFinder extends Component{
+
+    
+
     render(){
         return(
             <Aux>
                 <Header />
                 <br/>
-                <MainGrid/>
+                <MainGrid />
             </Aux>
 
         );

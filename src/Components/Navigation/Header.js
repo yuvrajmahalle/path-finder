@@ -1,5 +1,6 @@
 import React from 'react';
-import Aux from '../../hoc/Auxi/Auxi'
+import Aux from '../../hoc/Auxi/Auxi';
+
   
 
 const header = () => {
@@ -26,7 +27,7 @@ const header = () => {
                     </li>
                 </ul>
                 <form className="form-inline">
-                    <button className="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+                    <button className="btn btn-success my-2 my-sm-0" type="submit">Start</button>
                 </form>
                 </div>
             </nav>
