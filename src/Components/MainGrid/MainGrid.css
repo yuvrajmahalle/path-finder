@@ -1,5 +1,5 @@
 .MainDiv{
-    margin-left: 20px;
+    margin-left: 22px;
 }
 
 .GridCellInActive{
@@ -14,4 +14,16 @@
     height: 20px;
     background-color: #212529;
     outline: 1px solid rgba(144, 175, 175, 0.75);
+}
+
+.GridCellStart{
+    width: 20px;
+    height: 20px; 
+    border: 4px solid rgb(33, 202, 17);
+}
+ 
+.GridCellFinish{
+    width: 20px;
+    height: 20px; 
+    border: 4px solid rgb(221, 37, 13);
 }
